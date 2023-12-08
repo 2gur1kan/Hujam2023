@@ -45,6 +45,9 @@ public class SwordAttack2 : MonoBehaviour
     {
         character.GetComponent<PlayerMovment>().DontMove = false;
         character.GetComponent<Rigidbody2D>().gravityScale = 2f;
+        character.GetComponent<BasicAttack>().Attack = false;
+        character.GetComponent<BasicAttack>().AttackClick = false;
+        character.GetComponent<BasicAttack>().WaitAttak(.5f);
         Destroy(gameObject);
     }
     private void push(Collider2D collision)

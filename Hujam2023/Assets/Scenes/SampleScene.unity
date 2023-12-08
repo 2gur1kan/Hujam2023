@@ -185,7 +185,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -230,7 +230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1330616682}
   offSet: {x: 0, y: 0, z: -10}
-  size: 10
+  size: 4
   transitionSpeed: 10
 --- !u!1 &1330616682 stripped
 GameObject:

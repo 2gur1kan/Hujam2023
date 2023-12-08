@@ -1,0 +1,848 @@
+fileFormatVersion: 2
+guid: 7d697342da9e03a4aa40ac7e64bb5133
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 128
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd7ad34158b4dd4487f1db2616ac38c
+      internalID: -933971326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 128
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcbb972bc335b664b800b2d82213ec95
+      internalID: -1707906512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_4
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 128
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8bea3b0ff712044b92cf834addb0f2
+      internalID: -1579733949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_6
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 128
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206f30b7abb35884f88e5a1f5f7678ff
+      internalID: 792645270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_7
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 128
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 073ccd6857e4557429e1450cdf600739
+      internalID: -821768054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_9
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 96
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436949350bf0a7f41a2a831eb3b11fb3
+      internalID: -1627074854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_11
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 96
+        width: 21
+        height: 14
+      alignment: 9
+      pivot: {x: 0.4922131, y: 0.6132138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f146e244d0b5c4f9d66085c9938e72
+      internalID: 1147061195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_14
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 97
+        width: 23
+        height: 14
+      alignment: 9
+      pivot: {x: 0.4928904, y: 0.64016885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab56f9781b61814aa2080dbbbfb2f4c
+      internalID: 1306365084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_17
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 97
+        width: 21
+        height: 13
+      alignment: 9
+      pivot: {x: 0.50778854, y: 0.60063463}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41789c5410a0f94ba1c973f75e84cfa
+      internalID: 1854621811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_19
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 96
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e9b65818827cf45bcae7ebf0b09e11
+      internalID: -1843207887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_20
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 97
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc44e1552f964a41b1488e844abc998
+      internalID: -1419284335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_21
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 99
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f4c5b9144a70546b5ab1bcd0aec86d
+      internalID: 1957009749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_22
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 96
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b18c3228efbf94f8b7d53862612e7b
+      internalID: -2046217992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_25
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 64
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c74653c8b6608746a272a8086bb44c8
+      internalID: 1647746906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_28
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 64
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a516ba4e4dad9364ba6c03a2972a9647
+      internalID: -1657717992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_31
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 64
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ad2ce0645255148b19a26b5d5264e6
+      internalID: -1985837431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_33
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 64
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04c9102a3a4b6d4583f424f61bcae01
+      internalID: 1059719545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_34
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 64
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa3494bcc749de4a855938168265df2
+      internalID: 714132415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_35
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 64
+        width: 20
+        height: 12
+      alignment: 9
+      pivot: {x: 0.37735367, y: 0.4591179}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416674b3f483f06488a0e9cc91c8bfb2
+      internalID: -1064871038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_37
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 64
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6acb18730f63ee0459dd43120857d258
+      internalID: -610267785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_38
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 32
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7365fa3fb356d4ca535ebdcbe0428e
+      internalID: 432680926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_41
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 32
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4203b74f17d9549968fa3731706380
+      internalID: -687603529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_43
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 32
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166a8c558d9f04443ab28eae3e50d7dc
+      internalID: 961521673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_45
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 32
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee564012faabfd4788f3d684347b8a8
+      internalID: 1134156484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_46
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 32
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95eb2c229aaa5ea4f9f346ca4020ecbd
+      internalID: 206913347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_48
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3122de13108966140be3a3046ef5ea6b
+      internalID: -603649008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_51
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67bdd5b7d0859524998957854c083de2
+      internalID: 1137138994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_53
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e4c24c38f50514abf5be92d52be055
+      internalID: 150146626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_55
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc446790fc204e04fb359127086fcc8f
+      internalID: 2129613447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Golem_Animationst_56
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b9100169a623548a1fa012317aa73e
+      internalID: 2005672539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ball_Mni_Golem
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 69
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73d9092d67a7a84b9196d721d02b747
+      internalID: 1556259925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Ball_Mni_Golem: 1556259925
+      Mini_Golem_Animationst_0: -933971326
+      Mini_Golem_Animationst_10: 1517837968
+      Mini_Golem_Animationst_11: 1147061195
+      Mini_Golem_Animationst_12: 771445425
+      Mini_Golem_Animationst_13: 359795604
+      Mini_Golem_Animationst_14: 1306365084
+      Mini_Golem_Animationst_15: 616596865
+      Mini_Golem_Animationst_16: 1237242230
+      Mini_Golem_Animationst_17: 1854621811
+      Mini_Golem_Animationst_18: -1532023733
+      Mini_Golem_Animationst_19: -1843207887
+      Mini_Golem_Animationst_2: -1707906512
+      Mini_Golem_Animationst_20: -1419284335
+      Mini_Golem_Animationst_21: 1957009749
+      Mini_Golem_Animationst_22: -2046217992
+      Mini_Golem_Animationst_23: -1433323825
+      Mini_Golem_Animationst_24: 36395950
+      Mini_Golem_Animationst_25: 1647746906
+      Mini_Golem_Animationst_26: 1284840748
+      Mini_Golem_Animationst_27: 689170000
+      Mini_Golem_Animationst_28: -1657717992
+      Mini_Golem_Animationst_29: 1265686485
+      Mini_Golem_Animationst_3: -237315887
+      Mini_Golem_Animationst_30: -1045368618
+      Mini_Golem_Animationst_31: -1985837431
+      Mini_Golem_Animationst_32: 909691364
+      Mini_Golem_Animationst_33: 1059719545
+      Mini_Golem_Animationst_34: 714132415
+      Mini_Golem_Animationst_35: -1064871038
+      Mini_Golem_Animationst_36: 1180065079
+      Mini_Golem_Animationst_37: -610267785
+      Mini_Golem_Animationst_38: 432680926
+      Mini_Golem_Animationst_39: -45074952
+      Mini_Golem_Animationst_4: -1579733949
+      Mini_Golem_Animationst_40: -510452231
+      Mini_Golem_Animationst_41: -687603529
+      Mini_Golem_Animationst_42: -1149189038
+      Mini_Golem_Animationst_43: 961521673
+      Mini_Golem_Animationst_44: -2084166330
+      Mini_Golem_Animationst_45: 1134156484
+      Mini_Golem_Animationst_46: 206913347
+      Mini_Golem_Animationst_47: 336139623
+      Mini_Golem_Animationst_48: -603649008
+      Mini_Golem_Animationst_49: -46254054
+      Mini_Golem_Animationst_5: 1698377880
+      Mini_Golem_Animationst_50: -581885356
+      Mini_Golem_Animationst_51: 1137138994
+      Mini_Golem_Animationst_52: 614628477
+      Mini_Golem_Animationst_53: 150146626
+      Mini_Golem_Animationst_54: -1557608080
+      Mini_Golem_Animationst_55: 2129613447
+      Mini_Golem_Animationst_56: 2005672539
+      Mini_Golem_Animationst_6: 792645270
+      Mini_Golem_Animationst_7: -821768054
+      Mini_Golem_Animationst_8: -519850301
+      Mini_Golem_Animationst_9: -1627074854
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

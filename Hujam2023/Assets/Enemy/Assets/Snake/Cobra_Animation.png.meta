@@ -1,0 +1,844 @@
+fileFormatVersion: 2
+guid: 5d3a89951b86fcd4ebd27b05acf80550
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cobra_Animation_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 128
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715a565e4d9d4a14983dc2d9224b9bef
+      internalID: -1073010928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 128
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd05f02ccf3fe8543accd9222d080f67
+      internalID: -278000699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 128
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2354e413ee85a884cb7922954dd03c59
+      internalID: 1897682780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 128
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad99781b415bd5d4ab27e74501b69bbc
+      internalID: -1122460556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 128
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02bc9ec9c6944dc4bb19cd54d2acd240
+      internalID: 1164119062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 128
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 406ad0188a9c48e41a83ca533383dba4
+      internalID: -438093478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_6
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 128
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d834bef661c460d4f854f2d58e26ee3e
+      internalID: -692075164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_7
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 128
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a9e927263876d4192b4e8067f83777
+      internalID: -706381558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 96
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61947f932229aa46b6138d8f7b13f64
+      internalID: -212573119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_9
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 96
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ff3d000b54f1148afa3feba9ef79d9
+      internalID: -52161234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_10
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 96
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1288eb68bfa46b45bf9edd090b3845d
+      internalID: 1521480383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_11
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 96
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5f654303227dd4cbb3d31a5d1a0db6
+      internalID: 123679767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_12
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 96
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae6d570d6dd1aa49a0043db4c4a5b5d
+      internalID: 512597036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_13
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 96
+        width: 19
+        height: 14
+      alignment: 9
+      pivot: {x: 0.37182537, y: 0.51242447}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0264b170d4cc74abc7b8c5362ea0b8
+      internalID: -1360777998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_14
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 96
+        width: 22
+        height: 14
+      alignment: 9
+      pivot: {x: 0.37349007, y: 0.51242447}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfcce9945b3e2894aac98c6c8882a364
+      internalID: -1252349952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_15
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 96
+        width: 19
+        height: 14
+      alignment: 9
+      pivot: {x: 0.37182617, y: 0.49999946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 037bd73bbaa02954a80b0e286c2dc109
+      internalID: 419114071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 64
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b8ebad3a4147a46a399293daa9c18c
+      internalID: 222563481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_17
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 64
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f89bdbb669f9d34bb22395b259c870e
+      internalID: -1337025188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_18
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 64
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e914559323a6b5445a1b4d4302980163
+      internalID: -633905235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_19
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 64
+        width: 28
+        height: 16
+      alignment: 9
+      pivot: {x: 0.30119896, y: 0.5108714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9176cc7203974d48999ad582e8a3424
+      internalID: -1967588396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_20
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 64
+        width: 26
+        height: 14
+      alignment: 9
+      pivot: {x: 0.29259667, y: 0.512425}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76e8d615ee73e14ca7ad279811a9185
+      internalID: 569420606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_21
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 64
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496bac8ba88d12346bc2761b747fcc39
+      internalID: -1372262585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_22
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 32
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1bec7df3a5ac2848aeac215e8d7e901
+      internalID: 404558106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_23
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 32
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e87f57c4146e84dbeec3fb61d15c91
+      internalID: -392816875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_24
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 32
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496cfc754c88f9348aa0b0462f12085d
+      internalID: 663899706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_25
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 32
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e38f8c421c7a940988406b87a6b359
+      internalID: 1680783272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_26
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca420b42272d07c4f888278822aab7d5
+      internalID: 1323078407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_27
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5115967, y: 0.38098058}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379222a69ffb72641bcc9af6a2123898
+      internalID: -1239853679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_28
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5115967, y: 0.35351464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5aca48bf88acae40bf49fdab4f768f0
+      internalID: 771407370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_29
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 23
+        height: 15
+      alignment: 9
+      pivot: {x: 0.49999967, y: 0.4999995}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb5f7c972da21448a5e2eb3b05dfde0
+      internalID: 463756943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_30
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 29
+        height: 10
+      alignment: 9
+      pivot: {x: 0.49400172, y: 0.9348772}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2c0c8d6301c6647981b128efb7baeb
+      internalID: 1960403015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Animation_31
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 0
+        width: 31
+        height: 10
+      alignment: 9
+      pivot: {x: 0.4887774, y: 0.9174822}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c79f546182f8aa43b1554b263e8dabb
+      internalID: -1572471135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Cobra_Animation_0: -1073010928
+      Cobra_Animation_1: -278000699
+      Cobra_Animation_10: 1521480383
+      Cobra_Animation_11: 123679767
+      Cobra_Animation_12: 512597036
+      Cobra_Animation_13: -1360777998
+      Cobra_Animation_14: -1252349952
+      Cobra_Animation_15: 419114071
+      Cobra_Animation_16: 222563481
+      Cobra_Animation_17: -1337025188
+      Cobra_Animation_18: -633905235
+      Cobra_Animation_19: -1967588396
+      Cobra_Animation_2: 1897682780
+      Cobra_Animation_20: 569420606
+      Cobra_Animation_21: -1372262585
+      Cobra_Animation_22: 404558106
+      Cobra_Animation_23: -392816875
+      Cobra_Animation_24: 663899706
+      Cobra_Animation_25: 1680783272
+      Cobra_Animation_26: 1323078407
+      Cobra_Animation_27: -1239853679
+      Cobra_Animation_28: 771407370
+      Cobra_Animation_29: 463756943
+      Cobra_Animation_3: -1122460556
+      Cobra_Animation_30: 1960403015
+      Cobra_Animation_31: -1572471135
+      Cobra_Animation_4: 1164119062
+      Cobra_Animation_5: -438093478
+      Cobra_Animation_6: -692075164
+      Cobra_Animation_7: -706381558
+      Cobra_Animation_8: -212573119
+      Cobra_Animation_9: -52161234
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

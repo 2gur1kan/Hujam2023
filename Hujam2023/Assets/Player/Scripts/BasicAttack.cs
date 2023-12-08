@@ -7,23 +7,31 @@ public class BasicAttack : MonoBehaviour
     [SerializeField] private AttackValue Sword;
 
     private bool attack = true;
+    private bool attackClick = false;
     private float attackCastTime = 0;
     private float attackChargeCast = 0;
-
-
+    
     private Rigidbody2D rb2d;
     private PlayerMovment MovCS;
-    private bool jumped;
 
     public BasicAttackTypeEnum BA;
     public AttackDirectionEnum AD;
 
     public int AddDamage = 0;
 
+    public float AttackChargeCast { get => attackChargeCast; set => attackChargeCast = value; }
+    public bool Attack { get => attack; set => attack = value; }
+    public bool AttackClick { get => attackClick; set => attackClick = value; }
+
     private void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         MovCS = GetComponent<PlayerMovment>();
+    }
+
+    private void Update()
+    {
+        CheckInput();
     }
 
     private void FixedUpdate()
@@ -33,23 +41,21 @@ public class BasicAttack : MonoBehaviour
 
     private void CheckInput()
     {
-        if (attack && !MovCS.Stuned())
+        if (attack && !MovCS.Stuned() && Input.GetKeyDown(KeyCode.X))
         {
-            if (Input.GetKeyDown(KeyCode.X))
-            {
-                attackChargeCast = 0;
-                MovCS.DontMove = true;
-            }
-
-            if (Input.GetKeyUp(KeyCode.X))
-            {
-                attack = false;
-                SellectType();
-            }
-            else if (Input.GetKey(KeyCode.X))// x den çekildiðinde karakter stunda deðilse tutma sürene göre saldýr 
-            {  
-                attackChargeCast += Time.deltaTime;
-            }
+            attackChargeCast = 0;
+            attackClick = true;
+        }
+        else if (Input.GetKeyUp(KeyCode.X) && attack && attackClick)
+        {
+            MovCS.DontMove = true;
+            attack = false;
+            attackClick = false;
+            SellectType();
+        }
+        else if (Input.GetKey(KeyCode.X) && attack)// x den çekildiðinde karakter stunda deðilse tutma sürene göre saldýr 
+        {
+            attackChargeCast += Time.deltaTime;
         }
         else
         {
@@ -70,15 +76,27 @@ public class BasicAttack : MonoBehaviour
         }
     }
 
+    private void WaitAttak()
+    {
+        attackCastTime = this.Sword.attackCastTime;
+    }
+
+    public void WaitAttak(float waitTime)
+    {
+        attackCastTime = waitTime;
+    }
+
     private void swordAttack()
     {
-        if (attackChargeCast < .4f)
-        {
-            attackCastTime = this.Sword.attackCastTime;
+        rb2d.velocity = Vector2.zero;
+        rb2d.gravityScale = 0f;
 
-            rb2d.velocity = Vector2.zero;
-            rb2d.gravityScale = 0f;
-            AttackDirection();
+        WaitAttak();
+
+        AttackDirection();
+
+        if (attackChargeCast < 1 || !MovCS.IsGrounded)
+        {   
             GameObject Sword = Instantiate(this.Sword.basicAttack, transform.position, transform.rotation);
             Sword.GetComponent<SwordAttack>().AD = this.AD;
             Sword.GetComponent<SwordAttack>().AddDamage(AddDamage);
@@ -86,8 +104,9 @@ public class BasicAttack : MonoBehaviour
         }
         else
         {
-            //Charge Attack
-            attack = true;
+
+            GameObject Sword = Instantiate(this.Sword.basicChargeAttack, transform.position, transform.rotation);
+            Sword.GetComponent<SwordAttack2>().character = gameObject;
         }
     }
 
@@ -101,16 +120,13 @@ public class BasicAttack : MonoBehaviour
         {
             AD = AttackDirectionEnum.Up;
         }
-        else
+        else if(transform.localScale.x > 0)// saða vur
         {
-            if (transform.localScale.x > 0)// saða vur
-            {
-                AD = AttackDirectionEnum.Right;
-            }
-            else//sola vur
-            {
-                AD = AttackDirectionEnum.Left;
-            }
+            AD = AttackDirectionEnum.Right;
+        }
+        else//sola vur
+        {
+            AD = AttackDirectionEnum.Left;
         }
     }
 }
