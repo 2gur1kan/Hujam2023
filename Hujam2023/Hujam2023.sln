@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Collections", "Unity.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.VisualStudio.Editor", "Unity.VisualStudio.Editor.csproj", "{FF3878A7-80C8-8FEF-7F5E-868D823BD33C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{F2BFE37A-380F-623F-249D-0EE8E20DCA44}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Tilemap.Extras.Editor", "Unity.2D.Tilemap.Extras.Editor.csproj", "{5F99D47B-CF30-1229-F124-E9A301AEABAF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Rider.Editor", "Unity.Rider.Editor.csproj", "{CF3FB26F-6EFD-2A8C-F49A-EF2B49CF61CD}"
@@ -187,6 +189,10 @@ Global
 		{FF3878A7-80C8-8FEF-7F5E-868D823BD33C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF3878A7-80C8-8FEF-7F5E-868D823BD33C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF3878A7-80C8-8FEF-7F5E-868D823BD33C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2BFE37A-380F-623F-249D-0EE8E20DCA44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2BFE37A-380F-623F-249D-0EE8E20DCA44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2BFE37A-380F-623F-249D-0EE8E20DCA44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2BFE37A-380F-623F-249D-0EE8E20DCA44}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5F99D47B-CF30-1229-F124-E9A301AEABAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5F99D47B-CF30-1229-F124-E9A301AEABAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F99D47B-CF30-1229-F124-E9A301AEABAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
