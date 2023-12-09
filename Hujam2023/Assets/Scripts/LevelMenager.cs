@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class LevelMenager : MonoBehaviour
 {
+    private PlayerValuesManager Save;
+
     [SerializeField] private GameObject uniqueObject;
     public bool start;
     private Image image;
@@ -19,7 +21,9 @@ public class LevelMenager : MonoBehaviour
 
     private void Awake()
     {
-        //GetComponent<PlayerValuesManager>().LoadPlayerValues();
+        Save = GetComponent<PlayerValuesManager>();
+
+        Save.LoadPlayerValues();
     }
 
     private void Start()
@@ -34,7 +38,7 @@ public class LevelMenager : MonoBehaviour
     {
         if (start)
         {
-            GetComponent<PlayerValuesManager>().ResetValue();
+            Save.ResetValue();
 
             SceneManager.LoadScene(levelSelect(FirstScenes));
 
@@ -42,11 +46,9 @@ public class LevelMenager : MonoBehaviour
         //uniqueObject yok olduðunda yani bölüm bittiðinde
         else if (uniqueObject == null)
         {
-            //GetComponent<PlayerValuesManager>().SavePlayerValues();
+            Save.SavePlayerValues();
 
-            SceneManager.LoadScene(finishScene);
-
-            //StartCoroutine(nextScene());
+            StartCoroutine(nextScene());
         }
     }
 
@@ -55,7 +57,7 @@ public class LevelMenager : MonoBehaviour
         if (list == null || list.Count == 0)
         {
             Debug.LogError("Level listesi bos");
-            return -1;
+            return 0;
         }
 
         int randomIndex = UnityEngine.Random.Range(0, list.Count);

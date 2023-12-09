@@ -83,14 +83,9 @@ public class BasicAttack : MonoBehaviour
         }
     }
 
-    private void WaitAttak()
-    {
-        attackCastTime = this.Sword.attackCastTime;
-    }
-
     public void WaitAttak(float waitTime)
     {
-        attackCastTime = waitTime;
+        attackCastTime += waitTime;
     }
 
     private void swordAttack()
@@ -98,7 +93,7 @@ public class BasicAttack : MonoBehaviour
         rb2d.velocity = Vector2.zero;
         rb2d.gravityScale = 0f;
 
-        WaitAttak();
+        attackCastTime = this.Sword.attackCastTime;
 
         AttackDirection();
 
