@@ -48,7 +48,7 @@ public class LevelMenager : MonoBehaviour
         {
             Save.SavePlayerValues();
 
-            StartCoroutine(nextScene());
+            //StartCoroutine(nextScene());
         }
     }
 
