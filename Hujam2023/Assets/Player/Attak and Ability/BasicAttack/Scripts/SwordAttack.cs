@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SwordAttack : MonoBehaviour
 {
-    private bool attack;
+    private bool attack = false;
     public int damage = 2;
     public float destroyTime = .2f;
 
@@ -26,6 +26,11 @@ public class SwordAttack : MonoBehaviour
         AudioSource audioSource = GetComponent<AudioSource>();
         audioSource.clip = mySound;
         audioSource.Play();
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.X)) attack = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -52,7 +57,7 @@ public class SwordAttack : MonoBehaviour
     IEnumerator DestroyTime(float time)
     {
         yield return new WaitForSeconds(time);
-        if (Input.GetKey(KeyCode.X)) NextAttackCreate();
+        if (attack) NextAttackCreate();
         else character.GetComponent<Rigidbody2D>().gravityScale = 2f;
         destroyObject();
     }

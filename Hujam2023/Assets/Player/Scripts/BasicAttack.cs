@@ -45,13 +45,12 @@ public class BasicAttack : MonoBehaviour
         {
             attackChargeCast = 0;
             attackClick = true;
+
+            if (!MovCS.IsGrounded) AttackForMe();
         }
         else if (Input.GetKeyUp(KeyCode.X) && attack && attackClick)
         {
-            MovCS.DontMove = true;
-            attack = false;
-            attackClick = false;
-            SellectType();
+            AttackForMe();
         }
         else if (Input.GetKey(KeyCode.X) && attack)// x den çekildiðinde karakter stunda deðilse tutma sürene göre saldýr 
         {
@@ -62,6 +61,14 @@ public class BasicAttack : MonoBehaviour
             if (attackCastTime <= 0) attack = true;
             else attackCastTime -= Time.deltaTime;
         }
+    }
+
+    private void AttackForMe()
+    {
+        MovCS.DontMove = true;
+        attack = false;
+        attackClick = false;
+        SellectType();
     }
 
     private void SellectType()
