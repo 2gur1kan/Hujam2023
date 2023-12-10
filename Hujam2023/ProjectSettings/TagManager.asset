@@ -44,8 +44,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Back
+    uniqueID: 2731749845
+    locked: 0
+  - name: Assets
+    uniqueID: 920141811
+    locked: 0
   - name: Player
     uniqueID: 3077564235
+    locked: 0
+  - name: OnTheCamera
+    uniqueID: 2707007805
     locked: 0
   - name: UI
     uniqueID: 1783548431

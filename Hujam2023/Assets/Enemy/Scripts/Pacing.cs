@@ -95,7 +95,7 @@ public class Pacing : MonoBehaviour
 
         attack = hit.collider != null && hit.collider.CompareTag("Player");
 
-        if (hit.collider != null && (hit.collider.CompareTag("Wall") || hit.collider.CompareTag("Enemy") || hit.collider.CompareTag("Door"))) Turn();
+        if (hit.collider != null && (hit.collider.CompareTag("Wall") || hit.collider.CompareTag("Enemy"))) Turn();
 
         if (attack && !waitforattack)
         {

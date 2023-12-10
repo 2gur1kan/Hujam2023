@@ -18,6 +18,7 @@ public class CameraFollow : MonoBehaviour
 
     private void Start()
     {
+        offSet.z += -11;
         _camera = GetComponent<Camera>();
     }
 
