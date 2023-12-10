@@ -4,21 +4,36 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Canvas : MonoBehaviour
-{
+{   
+    [Header("Pause")]
     [SerializeField] private GameObject PausePanel;
     [SerializeField] private GameObject SettingsPanel;
     [SerializeField] private GameObject ControlPanel;
     [SerializeField] private GameObject SoundPanel;
 
+    [Header("")]
+    [SerializeField] private GameObject PlayerIcons;
+    [SerializeField] private GameObject DeadScreen;
+
+    private Health player;
     private bool isPaused;
 
     private void Awake()
     {
         PausePanelOff();
+        PlayerIcons.SetActive(true);
+        DeadScreen.SetActive(false);
+    }
+
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
     }
 
     void Update()
     {
+        if(player.CurrentHealth < 1)
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             isPaused = !isPaused;
@@ -28,6 +43,14 @@ public class Canvas : MonoBehaviour
             else Time.timeScale = 1f;
 
         }
+    }
+
+    public void Dead()
+    {
+        PlayerIcons.SetActive(false);
+        DeadScreen.SetActive(true);
+
+        Time.timeScale = 0f;
     }
 
     public void PausePanelControl()
