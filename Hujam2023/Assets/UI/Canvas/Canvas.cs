@@ -32,7 +32,7 @@ public class Canvas : MonoBehaviour
 
     void Update()
     {
-        if(player.CurrentHealth < 1)
+        if (player.CurrentHealth < 1) Dead();
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {

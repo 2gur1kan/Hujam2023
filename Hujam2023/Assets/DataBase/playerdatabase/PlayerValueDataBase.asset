@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlayerValueDataBase
   m_EditorClassIdentifier: 
   level: 1
-  BasicAttackType: 0
+  BasicAttackType: 1
   AddDamage: 0
   MaxHealt: 5
   DamageBlock: 0

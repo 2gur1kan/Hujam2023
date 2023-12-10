@@ -7,7 +7,7 @@ public class Shuriken : MonoBehaviour
     private bool attack = false;
     public int damage = 2;
     public float destroyTime = 3f;
-    public float moveSpeed = 3f;
+    public float moveSpeed = 30f;
 
     public GameObject character;
     public Transform target;
@@ -20,6 +20,8 @@ public class Shuriken : MonoBehaviour
     private void Start()
     {
         character.GetComponent<PlayerMovment>().DontMove = false;
+        character.GetComponent<Rigidbody2D>().gravityScale = 2f;
+
         rb = GetComponent<Rigidbody2D>();
         if(target == null) SelectDirection();
         StartCoroutine(DestroyTime(destroyTime));
@@ -33,7 +35,7 @@ public class Shuriken : MonoBehaviour
             Instantiate(HitEffect, transform.position, transform.rotation);
         }
 
-        if(collision != null)
+        if(collision.tag != "Player")
         {
             destroyObject();
         }
@@ -54,7 +56,6 @@ public class Shuriken : MonoBehaviour
     IEnumerator DestroyTime(float time)
     {
         yield return new WaitForSeconds(time);
-        character.GetComponent<Rigidbody2D>().gravityScale = 2f;
         destroyObject();
     }
 
@@ -72,7 +73,7 @@ public class Shuriken : MonoBehaviour
 
     private void connectTarget()
     {
-        Vector2 direction = target.position - transform.position;
+        direction = target.position - transform.position;
 
         direction.Normalize();
     }
