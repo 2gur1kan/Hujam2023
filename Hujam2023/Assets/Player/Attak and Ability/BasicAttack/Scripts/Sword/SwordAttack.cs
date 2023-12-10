@@ -42,7 +42,7 @@ public class SwordAttack : MonoBehaviour
             push(collision);
         }
 
-        if (collision.GetComponent<Spine>() != null)
+        if (collision.GetComponent<Spine>())
         {
             if(AD == AttackDirectionEnum.Down) pushUp(character);
             character.GetComponent<PlayerMovment>().JumpBool = true;
@@ -140,7 +140,7 @@ public class SwordAttack : MonoBehaviour
 
     private void pushUp(GameObject go)
     {
-        float pushForce = 3f;
+        float pushForce = 6f;
 
         go.GetComponent<Rigidbody2D>().AddForce(Vector2.up * pushForce, ForceMode2D.Impulse);
     }
