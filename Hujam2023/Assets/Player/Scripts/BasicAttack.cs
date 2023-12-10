@@ -5,6 +5,7 @@ using UnityEngine;
 public class BasicAttack : MonoBehaviour
 {
     [SerializeField] private AttackValue Sword;
+    [SerializeField] private AttackValue Shuriken;
 
     private bool attack = true;
     private bool attackClick = false;
@@ -78,6 +79,9 @@ public class BasicAttack : MonoBehaviour
             case BasicAttackTypeEnum.SwordAttack:
                 swordAttack();
                 break;
+            case BasicAttackTypeEnum.ShurikenAttack:
+                ShurikenAttack();
+                break;
             default:
                 break;
         }
@@ -107,6 +111,29 @@ public class BasicAttack : MonoBehaviour
         else
         {
 
+            GameObject Sword = Instantiate(this.Sword.basicChargeAttack, transform.position, transform.rotation);
+            Sword.GetComponent<SwordAttack2>().character = gameObject;
+        }
+    }
+
+    private void ShurikenAttack()
+    {
+        rb2d.velocity = Vector2.zero;
+        rb2d.gravityScale = 0f;
+
+        attackCastTime = this.Shuriken.attackCastTime;
+
+        AttackDirection();
+
+        if (attackChargeCast < 1 || !MovCS.IsGrounded)
+        {
+            GameObject Shuriken = Instantiate(this.Shuriken.basicAttack, transform.position, transform.rotation);
+            Shuriken.GetComponent<Shuriken>().AD = this.AD;
+            Shuriken.GetComponent<Shuriken>().AddDamage(AddDamage);
+            Shuriken.GetComponent<Shuriken>().character = gameObject;
+        }
+        else
+        {
             GameObject Sword = Instantiate(this.Sword.basicChargeAttack, transform.position, transform.rotation);
             Sword.GetComponent<SwordAttack2>().character = gameObject;
         }

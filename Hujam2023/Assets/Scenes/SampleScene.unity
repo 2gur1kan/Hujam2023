@@ -250,6 +250,10 @@ PrefabInstance:
       value: character
       objectReference: {fileID: 0}
     - target: {fileID: 3716589290150079727, guid: 077b7fa224fccff418b03f5ac359f5e6, type: 3}
+      propertyPath: BA
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3716589290150079727, guid: 077b7fa224fccff418b03f5ac359f5e6, type: 3}
       propertyPath: Sword.attackCastTime
       value: 2.5
       objectReference: {fileID: 0}

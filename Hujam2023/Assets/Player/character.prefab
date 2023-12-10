@@ -144,6 +144,11 @@ MonoBehaviour:
     basicAttack: {fileID: 4770443994421337429, guid: fabbda67373f7664796520257affbfe5, type: 3}
     basicChargeAttack: {fileID: 6240444408931603676, guid: 8e1d42da95ce5f84b83c8d1ff72b7004, type: 3}
     attackCastTime: 2.5
+  Shuriken:
+    basicAttackType: 1
+    basicAttack: {fileID: 5845574583580207409, guid: af9eabf25c7efd3449a82b4616346bd2, type: 3}
+    basicChargeAttack: {fileID: 0}
+    attackCastTime: 2
   BA: 0
   AD: 0
   AddDamage: 0

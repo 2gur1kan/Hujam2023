@@ -10,13 +10,13 @@ public class AttackValue
     public GameObject basicAttack;
     public GameObject basicChargeAttack;
 
-    public float attackCastTime;
+    public float attackCastTime = 2;
 }
 
 public enum BasicAttackTypeEnum
 {
     SwordAttack,
-    RangeAttack
+    ShurikenAttack
 }
 
 public enum AttackDirectionEnum
