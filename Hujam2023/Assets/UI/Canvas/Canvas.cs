@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Canvas : MonoBehaviour
@@ -43,6 +44,11 @@ public class Canvas : MonoBehaviour
             else Time.timeScale = 1f;
 
         }
+    }
+
+    public void setAudioVolume(Slider Value)
+    {
+        AudioListener.volume = Value.value;
     }
 
     public void Dead()
@@ -90,7 +96,7 @@ public class Canvas : MonoBehaviour
 
     public void BackToMainMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void Quit()

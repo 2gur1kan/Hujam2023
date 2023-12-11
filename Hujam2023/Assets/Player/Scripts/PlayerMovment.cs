@@ -17,6 +17,7 @@ public class PlayerMovment : MonoBehaviour
     private Rigidbody2D rb2d;
 
     public float height;
+    private bool moveSound;
 
     [Header("Jump")]
     [SerializeField] private float jumpForce = 12f; // Zýplama kuvveti
@@ -112,10 +113,20 @@ public class PlayerMovment : MonoBehaviour
         WalkAnimationPlay();
         Turn();
 
-        if (isGrounded)
+        //if (!moveSound) StartCoroutine(moveSoundController());
+
+        /*if (isGrounded)
         {
             height = transform.position.y;
-        }
+        }*/
+    }
+
+    IEnumerator moveSoundController()
+    {
+        moveSound = true;
+        SoundDataBaseController.Instance.PlaySound(SoundEnum.PLAYERSTEP);
+        yield return new WaitForSeconds(1f);
+        moveSound = false;
     }
 
     private void Jump()
@@ -129,6 +140,7 @@ public class PlayerMovment : MonoBehaviour
                 jumped = true;
                 jump = false;
 
+                SoundDataBaseController.Instance.PlaySound(SoundEnum.JUMP);
                 anim.SetTrigger("Up");
             }
 

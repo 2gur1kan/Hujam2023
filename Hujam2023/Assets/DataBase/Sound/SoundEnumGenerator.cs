@@ -46,7 +46,7 @@ public class SoundEnumGenerator:Editor
     public void UpdateEnum()
     {
         // Enum file path
-        string enumFilePath = "Assets/Scripts/Sound/SoundEnum.cs";
+        string enumFilePath = "Assets/DataBase/Sound/SoundEnum.cs";
 
         string[] enumValues = new string[soundListSO.soundList.Count];
         for (int i = 0; i < soundListSO.soundList.Count; i++)

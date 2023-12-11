@@ -7,6 +7,8 @@ public class WaitMeEnemy : MonoBehaviour
     [Header("Damage")]
     [SerializeField] private int damage = 1;
     [SerializeField] private float damageCastTime = 1f;
+    [SerializeField] private float upDownRayCast = 0f;
+    [SerializeField] private float RayCastLenght = 1f;
     private bool waitforattack;
 
     [Header("Ground Check Lenght")]
@@ -18,6 +20,7 @@ public class WaitMeEnemy : MonoBehaviour
 
     private Rigidbody2D rb2d;
     private Animator anim;
+    private EnemyHealth health;
     private bool isGrounded = false;
     private bool turn = true;
     private bool TurnLeft;
@@ -41,6 +44,7 @@ public class WaitMeEnemy : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        health = GetComponent<EnemyHealth>();
     }
 
     private void Update()
@@ -85,8 +89,14 @@ public class WaitMeEnemy : MonoBehaviour
 
     private void Move()
     {
-        CreateRayCast();
-        if (detectPlayer && !waitAttack && !attack)
+        if (health.Health <= 0)
+        {
+            rb2d.velocity = Vector2.zero;
+            stop = true;
+        }
+        else CreateRayCast();
+
+        if (detectPlayer && !waitAttack && !attack && !stop)
         {
             Turn();
             anim.SetBool("Walk", true);
@@ -124,14 +134,14 @@ public class WaitMeEnemy : MonoBehaviour
 
         if (transform.localScale.x > 0)
         {
-            hit = Physics2D.Raycast(transform.position, new Vector2(1, 0), attackRange, LayerMask.GetMask("Player"));
-            Debug.DrawRay(transform.position, new Vector2(1, 0) * attackRange, Color.red);
+            hit = Physics2D.Raycast(transform.position, new Vector2(RayCastLenght, upDownRayCast), attackRange, LayerMask.GetMask("Player"));
+            Debug.DrawRay(transform.position, new Vector2(RayCastLenght, upDownRayCast) * attackRange, Color.red);
 
         }
         else
         {
-            hit = Physics2D.Raycast(transform.position, new Vector2(-1, 0), attackRange, LayerMask.GetMask("Player"));
-            Debug.DrawRay(transform.position, new Vector2(-1, 0) * attackRange, Color.red);
+            hit = Physics2D.Raycast(transform.position, new Vector2(-RayCastLenght, upDownRayCast), attackRange, LayerMask.GetMask("Player"));
+            Debug.DrawRay(transform.position, new Vector2(-RayCastLenght, upDownRayCast) * attackRange, Color.red);
         }
 
         attack = hit.collider != null && hit.collider.CompareTag("Player");
@@ -160,25 +170,26 @@ public class WaitMeEnemy : MonoBehaviour
         StartCoroutine(DamageDelay(damage));
         yield return new WaitForEndOfFrame();
         anim.SetBool("Attack", false);
+        stop = false;
         yield return new WaitForSeconds(damageCastTime);
         waitforattack = false;
-        stop = false;
     }
     IEnumerator DamageDelay(int damage)
     {
         yield return new WaitForSeconds(damageDelay);
-        
+        SoundDataBaseController.Instance.PlaySound(SoundEnum.PUNCH);
+
         RaycastHit2D hit;
 
         if (transform.localScale.x > 0)
         {
-            hit = Physics2D.Raycast(transform.position, Vector2.right, attackRange * 1.2f, LayerMask.GetMask("Player"));
-            Debug.DrawRay(transform.position, Vector2.right * attackRange, Color.red);
+            hit = Physics2D.Raycast(transform.position, new Vector2(RayCastLenght, upDownRayCast), attackRange * 1.2f, LayerMask.GetMask("Player"));
+            Debug.DrawRay(transform.position, new Vector2(RayCastLenght, upDownRayCast) * attackRange, Color.red);
         }
         else
         {
-            hit = Physics2D.Raycast(transform.position, Vector2.left, attackRange * 1.2f, LayerMask.GetMask("Player"));
-            Debug.DrawRay(transform.position, Vector2.left * attackRange, Color.red);
+            hit = Physics2D.Raycast(transform.position, new Vector2(-RayCastLenght, upDownRayCast), attackRange * 1.2f, LayerMask.GetMask("Player"));
+            Debug.DrawRay(transform.position, new Vector2(-RayCastLenght, upDownRayCast) * attackRange, Color.red);
         }
 
         attack = hit.collider != null && hit.collider.CompareTag("Player");

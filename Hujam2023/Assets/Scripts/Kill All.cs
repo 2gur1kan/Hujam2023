@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class KillAll : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> list;
+    [SerializeField] private List<EnemyHealth> list;
     [SerializeField] private GameObject Unlock;
 
     private void Update()
@@ -13,7 +13,7 @@ public class KillAll : MonoBehaviour
         {
             for (int i = 0; i < list.Count; i++)
             {
-                if(list[i] == null)
+                if(list[i].Health <= 0)
                 {
                     list.RemoveAt(i);
                 }

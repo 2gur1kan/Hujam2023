@@ -19,6 +19,8 @@ public class Shuriken : MonoBehaviour
 
     private void Start()
     {
+        SoundDataBaseController.Instance.PlaySound(SoundEnum.TROW);
+
         character.GetComponent<PlayerMovment>().DontMove = false;
         character.GetComponent<Rigidbody2D>().gravityScale = 2f;
 
@@ -36,6 +38,14 @@ public class Shuriken : MonoBehaviour
         }
 
         if(collision.tag != "Player")
+        {
+            destroyObject();
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag != "Player")
         {
             destroyObject();
         }

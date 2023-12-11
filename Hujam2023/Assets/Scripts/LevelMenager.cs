@@ -23,7 +23,7 @@ public class LevelMenager : MonoBehaviour
     {
         Save = GetComponent<PlayerValuesManager>();
 
-        Save.LoadPlayerValues();
+        //Save.LoadPlayerValues();
     }
 
     private void Start()
@@ -38,16 +38,17 @@ public class LevelMenager : MonoBehaviour
     {
         if (start)
         {
-            Save.ResetValue();
+            //Save.ResetValue();
 
-            SceneManager.LoadScene(levelSelect(FirstScenes));
+           // SceneManager.LoadScene(levelSelect(FirstScenes));
 
         }
         //uniqueObject yok olduðunda yani bölüm bittiðinde
         else if (uniqueObject == null)
         {
-            Save.SavePlayerValues();
-
+            //Save.SavePlayerValues();
+            //finishhhhhh
+            SceneManager.LoadScene(2);
             //StartCoroutine(nextScene());
         }
     }

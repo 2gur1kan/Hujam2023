@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5231210088549560877}
   - component: {fileID: 7415319885327465834}
   - component: {fileID: 7673165887513468915}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ghoul
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -77,8 +77,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -44427269
-  m_SortingLayer: 3
+  m_SortingLayerID: -1217403061
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -1404306663, guid: 802656398e0d6f740a698dd2fedfc8b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 468218447703096176}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 781bfa40f57b3074c90e6379acec37f5, type: 3}
+  m_Script: {fileID: 11500000, guid: 8762e5206864f50449d4ff3e5c71bb1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
@@ -229,6 +229,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 2
   damageCastTime: 4
+  upDownRayCast: -0.2
+  RayCastLenght: 0.7
   ground: 0.5
   wall: 0.7
   speed: 1
@@ -249,7 +251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 7
-  maxHealth: 0
+  maxHealth: 7
   staggerTime: 0.2
 --- !u!50 &7673165887513468915
 Rigidbody2D:

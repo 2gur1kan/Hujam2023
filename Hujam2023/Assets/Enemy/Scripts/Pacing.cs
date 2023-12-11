@@ -18,6 +18,7 @@ public class Pacing : MonoBehaviour
 
     private Rigidbody2D rb2d;
     private Animator anim;
+    private EnemyHealth health;
     private bool isGrounded = false;
     private bool turn = true;
     private float wait = 0;
@@ -32,6 +33,7 @@ public class Pacing : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        health = GetComponent<EnemyHealth>();
     }
 
     private void Update()
@@ -58,7 +60,13 @@ public class Pacing : MonoBehaviour
 
     private void Move()
     {
-        CreateRayCast();
+        if(health.Health <=0)
+        {
+            rb2d.velocity = Vector2.zero;
+            stop = true;
+        }
+        else CreateRayCast();
+
         if (!stop)
         {  
             if (isGrounded) rb2d.velocity = new Vector2(speed, rb2d.velocity.y);
@@ -139,8 +147,10 @@ public class Pacing : MonoBehaviour
 
     IEnumerator takeDamage(int damage)
     {
+
         yield return new WaitForSeconds(.2f);
         anim.SetBool("Attack", false);
+        SoundDataBaseController.Instance.PlaySound(SoundEnum.HITSLUG);
         CreateRayCast(damage);
         yield return new WaitForSeconds(damageCastTime);
         waitforattack = false;

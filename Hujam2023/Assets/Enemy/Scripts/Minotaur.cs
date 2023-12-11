@@ -67,7 +67,7 @@ public class Minotaur : MonoBehaviour
         {
             float distance = Vector2.Distance(transform.position, player.transform.position);
 
-            if (distance < detectionDistance && player.transform.position.y > transform.position.y -1f)
+            if (distance < detectionDistance && player.transform.position.y > transform.position.y -2f)
             {
                 detectPlayer = true;
                 if (!player.GetComponent<Health>().dead)
@@ -144,16 +144,16 @@ public class Minotaur : MonoBehaviour
 
         if (transform.localScale.x > 0)
         {
-            hit2 = Physics2D.Raycast(transform.position, new Vector2(1,-.5f), AttackRange, LayerMask.GetMask("Player"));
+            hit2 = Physics2D.Raycast(transform.position, new Vector2(1,-.7f), AttackRange, LayerMask.GetMask("Player"));
             Debug.DrawRay(transform.position, new Vector2(1, -.5f) * AttackRange, Color.red);
-            hit = Physics2D.Raycast(transform.position, new Vector2(1,.5f), AttackRange, LayerMask.GetMask("Player"));
+            hit = Physics2D.Raycast(transform.position, new Vector2(1,.7f), AttackRange, LayerMask.GetMask("Player"));
             Debug.DrawRay(transform.position, new Vector2(1, .5f) * AttackRange, Color.red);
         }
         else
         {
-            hit = Physics2D.Raycast(transform.position, new Vector2(-1, -.5f), AttackRange, LayerMask.GetMask("Player"));
+            hit = Physics2D.Raycast(transform.position, new Vector2(-1, -.7f), AttackRange, LayerMask.GetMask("Player"));
             Debug.DrawRay(transform.position, new Vector2(-1, -.5f) * AttackRange, Color.red);
-            hit2 = Physics2D.Raycast(transform.position, new Vector2(-1, .5f), AttackRange, LayerMask.GetMask("Player"));
+            hit2 = Physics2D.Raycast(transform.position, new Vector2(-1, .7f), AttackRange, LayerMask.GetMask("Player"));
             Debug.DrawRay(transform.position, new Vector2(-1, .5f) * AttackRange, Color.red);
         }
 
@@ -195,6 +195,7 @@ public class Minotaur : MonoBehaviour
         Attack1wait = true;
         anim.SetTrigger("Attack1");
         yield return new WaitForSeconds(Attack1CastTime);
+        SoundDataBaseController.Instance.PlaySound(SoundEnum.SWORDATTACK);
         anim.ResetTrigger("Attack1");
         GameObject attack1GO = Instantiate(Attack1GO, CalculateDirectionX(1f), transform.rotation);
         attack1GO.GetComponent<AttackBox>().damage = Attack1Damage;
@@ -207,6 +208,7 @@ public class Minotaur : MonoBehaviour
     {
         Attack2wait = true;
         anim.SetTrigger("Attack2");
+        SoundDataBaseController.Instance.PlaySound(SoundEnum.ROAR);
         yield return new WaitForSeconds(Attack2CastTime);
         anim.ResetTrigger("Attack2");
         GameObject attack2GO = Instantiate(Attack2GO, CalculateDirectionY(1f), transform.rotation);
@@ -217,6 +219,7 @@ public class Minotaur : MonoBehaviour
         if(GetComponent<EnemyHealth>().maxHealth / 2 >= GetComponent<EnemyHealth>().Health)
         {
             anim.SetTrigger("Attack2");
+            SoundDataBaseController.Instance.PlaySound(SoundEnum.ROAR);
             yield return new WaitForSeconds(Attack2CastTime);
             anim.ResetTrigger("Attack2");
             attack2GO = Instantiate(Attack2GO, CalculateDirectionY(1f), transform.rotation);
@@ -240,6 +243,7 @@ public class Minotaur : MonoBehaviour
         GameObject attack3GO = Instantiate(Attack3GO, CalculateDirectionY(.5f), transform.rotation);
         attack3GO.GetComponent<AttackBox>().damage = Attack1Damage;
         attack3GO.GetComponent<AttackBox>().DestroyTime = Attack3SpinTime;
+        StartCoroutine(Attack3SpinSound(Attack3SpinTime));
         yield return new WaitForSeconds(Attack3SpinTime);
         anim.SetTrigger("SpinStop");
 
@@ -247,6 +251,16 @@ public class Minotaur : MonoBehaviour
         yield return new WaitForSeconds(Attack3WaitTime);
         anim.ResetTrigger("SpinStop");
         Attack3wait = false;
+    }
+
+    IEnumerator Attack3SpinSound(float spintime)
+    {
+        if (spintime > 0)
+        {
+            SoundDataBaseController.Instance.PlaySound(SoundEnum.SWORDATTACK);
+            yield return new WaitForSeconds(.2f);
+        }
+        else spintime -= Time.deltaTime;
     }
 
     private Vector3 CalculateDirectionX(float value)

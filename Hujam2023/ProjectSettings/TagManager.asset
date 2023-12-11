@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Attack
   - Enemy
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
+  - Player
   - 
   - 
   - 
@@ -49,6 +50,9 @@ TagManager:
     locked: 0
   - name: Assets
     uniqueID: 920141811
+    locked: 0
+  - name: Object
+    uniqueID: 3536853829
     locked: 0
   - name: Player
     uniqueID: 3077564235

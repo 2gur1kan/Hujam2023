@@ -183,7 +183,8 @@ GameObject:
   - component: {fileID: 5168995467196042987}
   - component: {fileID: 5973359504720994854}
   - component: {fileID: 4742339892155799670}
-  - component: {fileID: 6914871977678995456}
+  - component: {fileID: 6266523522077782430}
+  - component: {fileID: -1495276961133146226}
   m_Layer: 0
   m_Name: ShockWave
   m_TagString: Untagged
@@ -246,7 +247,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -44427269
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 663019969, guid: 6e3dcd50234b55b499fda58d0d150547, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -391,7 +392,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.0041520596, y: 0.27}
   m_EdgeRadius: 0
---- !u!114 &6914871977678995456
+--- !u!114 &6266523522077782430
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -400,8 +401,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 6388873846761923794}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4712db57ef0ff4f4596d443d0b84f247, type: 3}
+  m_Script: {fileID: 11500000, guid: 8762e5206864f50449d4ff3e5c71bb1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+--- !u!114 &-1495276961133146226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388873846761923794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9c70582f997f46469f251d67e377676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Right: 0
-  speed: 10
+  speed: 6

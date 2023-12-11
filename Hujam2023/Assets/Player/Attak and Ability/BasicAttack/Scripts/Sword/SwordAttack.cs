@@ -140,7 +140,7 @@ public class SwordAttack : MonoBehaviour
 
     private void pushUp(GameObject go)
     {
-        float pushForce = 6f;
+        float pushForce = 3f;
 
         go.GetComponent<Rigidbody2D>().AddForce(Vector2.up * pushForce, ForceMode2D.Impulse);
     }

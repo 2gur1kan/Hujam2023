@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
@@ -14,10 +15,14 @@ public class MainMenu : MonoBehaviour
 
     [SerializeField] private GameObject CreditsPanel;
 
-
     private void Awake()
     {
         Back();
+    }
+
+    public void setAudioVolume(Slider Value)
+    {
+        AudioListener.volume = Value.value;
     }
 
     public void CreaditsPanelOn()

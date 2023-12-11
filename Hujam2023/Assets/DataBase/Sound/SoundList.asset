@@ -12,4 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52db6c9f9f56aad48bbe6672958c1694, type: 3}
   m_Name: SoundList
   m_EditorClassIdentifier: 
-  soundList: []
+  soundList:
+  - soundName: METIN2
+    sound: {fileID: 8300000, guid: 71be35cdaf7b1ca4b90cc4d888c8b05c, type: 3}
+  - soundName: SWORDATTACK
+    sound: {fileID: 8300000, guid: 3a57bcb0d7d0a924fa474d8a81c81326, type: 3}
+  - soundName: TROW
+    sound: {fileID: 8300000, guid: 6fa1180e421a3854c91b7778572d5f52, type: 3}
+  - soundName: PLAYERSTEP
+    sound: {fileID: 8300000, guid: 47d6852ae1920d942afff8ddfafe09b7, type: 3}
+  - soundName: STEP1
+    sound: {fileID: 8300000, guid: 3410c4d0ce75c2c4db9be8c94cb74466, type: 3}
+  - soundName: HITSLUG
+    sound: {fileID: 8300000, guid: fa3c56c4a1bab324fa7fdae7f1eaa9eb, type: 3}
+  - soundName: PUNCH
+    sound: {fileID: 8300000, guid: 980b5dd242f5afc4bb6e2b5dcb93aaad, type: 3}
+  - soundName: ROAR
+    sound: {fileID: 8300000, guid: 3054b7af4072f884baa5fecd522cf29b, type: 3}
+  - soundName: JUMP
+    sound: {fileID: 8300000, guid: dcb827f3665b5cf43b691e27905bfbd8, type: 3}

@@ -13,6 +13,8 @@ public class SwordAttack2 : MonoBehaviour
 
     private void Start()
     {
+        SoundDataBaseController.Instance.PlaySound(SoundEnum.TROW);
+
         StartCoroutine(DestroyTime(destroyTime));
     }
     private void OnTriggerEnter2D(Collider2D collision)

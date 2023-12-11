@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1217403061
-  m_SortingLayer: 1
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 663019969, guid: 6e3dcd50234b55b499fda58d0d150547, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -151,7 +151,7 @@ MonoBehaviour:
   AD: 2
   HitEffect: {fileID: 1912022332662343903, guid: 2a137c277faff3f47b4dc5f3c711a2af, type: 3}
   NextAttack: {fileID: 6240444408931603676, guid: 8e1d42da95ce5f84b83c8d1ff72b7004, type: 3}
-  mySound: {fileID: 8300000, guid: 71eb3afd5fb29f64da0a1cba52a9761c, type: 3}
+  mySound: {fileID: 8300000, guid: 3a57bcb0d7d0a924fa474d8a81c81326, type: 3}
 --- !u!95 &-8172979308958711059
 Animator:
   serializedVersion: 5
